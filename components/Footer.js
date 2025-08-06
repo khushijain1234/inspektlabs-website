@@ -94,7 +94,7 @@ const Footer = ({locale}) => {
                         <div className="social-container">
                             <a href="https://www.linkedin.com/company/inspektlabs" target="_blank" rel="noreferrer noopener"><i className="fab fa-linkedin fa-2x" title="LinkedIn"></i></a>
                             <a href="https://angel.co/company/inspekt-labs" target="_blank" rel="noreferrer noopener"><i className="fab fa-angellist fa-2x" title="AngelList"></i></a>
-                            <a href="https://www.crunchbase.com/organization/inspektlabs" target="_blank" rel="noreferrer noopener"><Image className="customIcon" src="/img/cb.png" width={28} height={32} alt="Crunchbase" /></a>
+                            <a href="https://www.crunchbase.com/organization/inspektlabs" target="_blank" rel="noreferrer noopener"><Image className="customIcon" src="/img/cb.svg" width={28} height={32} alt="Crunchbase" /></a>
                             <a href="https://twitter.com/InspektlabsAI" target="_blank" rel="noreferrer noopener"><i className="fab fa-twitter fa-2x" title="Twitter"></i></a>
                             <a href="https://www.instagram.com/inspektlabs" target="_blank" rel="noreferrer noopener"><i className="fab fa-instagram fa-2x" title="Instagram"></i></a>
                         </div>

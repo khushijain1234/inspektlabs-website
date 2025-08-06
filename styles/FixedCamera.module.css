@@ -11,7 +11,6 @@
   }
   
   .featured {
-    padding: 5rem;
     background: #222023;
     background: url('/img/fixed-camera-featured-photo.svg');
     background-size: cover;
@@ -438,7 +437,6 @@
   }
 @media (max-width: 1024px) {
     .featured {
-        padding: 2rem;
         position: static;
       }
     

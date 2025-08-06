@@ -91,7 +91,6 @@ a {
   font-weight: 500;
   gap: 27px;
   flex-wrap: nowrap;
-  overflow: hidden;
   margin-left: auto;
   /* display: block; */
   /* align-self: center; */
@@ -288,6 +287,10 @@ a {
 }
 
 .footer .section-40 .social-container a .customIcon {
+  filter: invert(1);
+}
+
+.social-container a .customIcon {
   filter: invert(1);
 }
 

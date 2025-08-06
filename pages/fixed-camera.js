@@ -46,7 +46,7 @@ const FixedCamera = ({ locale }) => {
         {
             id: '3',
             title: 'High Throughput - scan up to 120 vehicles per hour',
-            img: 'benefits1.svg',
+            img: 'benefits6.svg',
             width: 124,
             height: 124
         },
@@ -160,7 +160,7 @@ const FixedCamera = ({ locale }) => {
             <section className={styles.featured}>
                 <div className={styles.grid}>
                     <h1 className={styles.featuredTitle}>AI-Powered Vehicle Damage Scanners</h1>
-                    <h3 className={styles.featuredText}>Inspektlabs vehicle scanners capture high-resolution image and video of cars to automatically detect Damages, enabling fast, accurate and cost effective inspections.</h3>
+                    <p className={styles.featuredText}>Inspektlabs vehicle scanners capture high-resolution image and video of cars to automatically detect Damages, enabling fast, accurate and cost effective inspections.</p>
                     <div className={styles.requestDemoBtn} onClick={() => (window.location.href = '/contact-us')}>Request a Demo</div>
                 </div>
             </section>
@@ -172,7 +172,7 @@ const FixedCamera = ({ locale }) => {
                             return(
                                 <div className={styles.vehicleScannerFeature}>
                                     <div className={styles.scannerImg}>
-                                    <Image src={`/img/${data.img}`} width={450} height={300} />
+                                    <Image src={`/img/${data.img}`} width={450} height={300} alt={data.title}/>
                                     </div>
                                     <div className={styles.scannerContent}>
                                         <h3>{data.title}</h3>
@@ -193,7 +193,7 @@ const FixedCamera = ({ locale }) => {
                             keyBenefits.map((benefit) =>{
                                 return(
                                     <div className={styles.benefitItem}>
-                                        <Image src={`/img/${benefit.img}`} className={styles.benefitItemImg} width={140} height={140} />
+                                        <Image src={`/img/${benefit.img}`} className={styles.benefitItemImg} width={140} height={140} alt={benefit.title}/>
                                         <p>{benefit.title}</p>
                                     </div>
                                 )
@@ -210,36 +210,36 @@ const FixedCamera = ({ locale }) => {
                     <div className={styles.servedFeaturesContent}>
                         
                         <div className={styles.servedFeature}>
-                            <Image src='/img/Fleet Management.svg' width={250} height={200} />
+                            <Image src='/img/Fleet Management.svg' width={250} height={200} alt='Fleet Management'/>
                             <p className={styles.servedFeatureTitle}>Fleet Management</p>
                             <p className={styles.servedFeatureSubTitle}>Daily vehicle condition reports</p>
                         </div>
                         <div className={styles.arrow}>
-                            <Image src='/img/Vector 2740.svg'   width={100} height={20} />
+                            <Image src='/img/Vector 2740.svg'   width={100} height={20} alt='arrow' />
                         </div>
                         <div className={styles.servedFeature}>
-                            <Image src='/img/Car rental companies.svg' width={250} height={200} />
+                            <Image src='/img/Car rental companies.svg' width={250} height={200} alt='Car rental companies' />
                             <p className={styles.servedFeatureTitle}>Car rental companies</p>
                             <p className={styles.servedFeatureSubTitle}>Record vehicle condition before and after rentals to avoid disputes and spot damages</p>
                         </div>
                         <div className={styles.arrow}>
-                            <Image src='/img/Vector 2740.svg'   width={100} height={20} />
+                            <Image src='/img/Vector 2740.svg'   width={100} height={20} alt='arrow' />
                         </div>
                         <div className={styles.servedFeature}>
-                            <Image src='/img/Logistics pre-Delivery Inspections.svg' width={250} height={200} />
+                            <Image src='/img/Logistics pre-Delivery Inspections.svg' width={250} height={200} alt='Logistics pre-delivery' />
                             <p className={styles.servedFeatureTitle}>Logistics Pre-Delivery Inspections</p>
                             <p className={styles.servedFeatureSubTitle}>Verify vehicle condition before delivery with quick, automated checks</p>
                         </div>
                         <div className={styles.servedFeature}>
-                            <Image src='/img/Auction solutions.svg' width={250} height={200} />
+                            <Image src='/img/Auction solutions.svg' width={250} height={200} alt='Auction solutions' />
                             <p className={styles.servedFeatureTitle}>Auto re-marketing/ Auction solutions</p>
                             <p className={styles.servedFeatureSubTitle}>Create reliable inspection reports to boost buyer trust and speed up sales</p>
                         </div>
                         <div className={styles.arrow}>
-                            <Image src='/img/Vector 2740.svg'   width={100} height={20} />
+                            <Image src='/img/Vector 2740.svg'   width={100} height={20} alt='arrow' />
                         </div>
                         <div className={styles.servedFeature}>
-                            <Image src='/img/Automotive Repair Network.svg' width={250} height={200} />
+                            <Image src='/img/Automotive Repair Network.svg' width={250} height={200} alt='Automotive Repair Network' />
                             <p className={styles.servedFeatureTitle}>Automotive Repair Networks</p>
                             <p className={styles.servedFeatureSubTitle}>Daily vehicle condition reports</p>
                         </div>
@@ -255,7 +255,7 @@ const FixedCamera = ({ locale }) => {
                         {additionalSectionData.map((data)=>{
                             return(
                                 <div className={styles.additionalSectionBox}>
-                                    <Image src={`/img/${data.img}`} width={470} height={300} />
+                                    <Image src={`/img/${data.img}`} width={470} height={300} alt={data.title} />
                                     <div className={styles.additionalSectionInnerBox}>
                                         <p className={styles.additionalSectionTitle}>{data.title}</p>
                                         <p className={styles.additionalSectionText}>{data.text}</p>
