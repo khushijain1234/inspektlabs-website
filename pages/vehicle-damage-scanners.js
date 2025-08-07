@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import styles from '../styles/FixedCamera.module.css';
+import styles from '../styles/VehicleDamageScanners.module.css';
 import Image from 'next/image';
 import { questions } from '../const/faq';
 
@@ -172,7 +172,7 @@ const FixedCamera = ({ locale }) => {
                             return(
                                 <div className={styles.vehicleScannerFeature}>
                                     <div className={styles.scannerImg}>
-                                    <Image src={`/img/${data.img}`} width={450} height={300} alt={data.title}/>
+                                    <Image src={`/img/${data.img}`} layout='fill' objectFit='cover' objectPosition='center' alt={data.title}/>
                                     </div>
                                     <div className={styles.scannerContent}>
                                         <h3>{data.title}</h3>
@@ -230,6 +230,9 @@ const FixedCamera = ({ locale }) => {
                             <p className={styles.servedFeatureTitle}>Logistics Pre-Delivery Inspections</p>
                             <p className={styles.servedFeatureSubTitle}>Verify vehicle condition before delivery with quick, automated checks</p>
                         </div>
+                        <div className={styles.arrow}>
+                            <Image src='/img/Vector 2740.svg'   width={100} height={20} alt='arrow' />
+                        </div>
                         <div className={styles.servedFeature}>
                             <Image src='/img/Auction solutions.svg' width={250} height={200} alt='Auction solutions' />
                             <p className={styles.servedFeatureTitle}>Auto re-marketing/ Auction solutions</p>
@@ -255,7 +258,9 @@ const FixedCamera = ({ locale }) => {
                         {additionalSectionData.map((data)=>{
                             return(
                                 <div className={styles.additionalSectionBox}>
-                                    <Image src={`/img/${data.img}`} width={470} height={300} alt={data.title} />
+                                    <div className={styles.additionalSectionImg}>
+                                    <Image src={`/img/${data.img}`} layout='fill' objectFit='cover' objectPosition='center' alt={data.title} />
+                                    </div>
                                     <div className={styles.additionalSectionInnerBox}>
                                         <p className={styles.additionalSectionTitle}>{data.title}</p>
                                         <p className={styles.additionalSectionText}>{data.text}</p>

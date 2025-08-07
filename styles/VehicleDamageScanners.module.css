@@ -34,7 +34,7 @@
     line-height: 80.4px;
     letter-spacing: -2.1px;
     font-weight: 600;
-    width: 1000px;
+    width: 80%;
     color: #FFFFFF;
 }
 
@@ -42,7 +42,7 @@
     font-size: 24px;
     line-height: 34.56px;
     font-weight: 400;
-    width: 600px;
+    width: 45%;
     color: #FFFFFF;
 }
 
@@ -77,19 +77,26 @@
     line-height: 75px;
     letter-spacing: -3.46px;
     font-weight: 500;
-    width: 800px;
+    width: 60%;
 }
 
 .vehicleScannerFeaturesContent{
     display: flex;
     gap: 40px;
+    width: 100%;
 }
 
 .vehicleScannerFeature{
-    width: 450px;
-    height: 420px;
+    /* width: 450px; */
+    width: 33.3%;
+    height: 380px;
     border-radius: 28px;
     border: 1px solid #4353FF;
+}
+.scannerImg{
+    position: relative;
+    width: 100%;
+    height: 50%;
 }
 
 .scannerImg img{
@@ -170,7 +177,7 @@
     font-size: 24px;
     line-height: 36px;
     font-weight: 400;
-    width: 1000px;
+    width: 80%;
 }
 
 .servedFeaturesContent{
@@ -224,27 +231,29 @@
     line-height: 95px;
     letter-spacing: -3.46px;
     font-weight: 500;
-    width: 800px;
+    width: 70%;
 }
 
 .additionalSectionSubHeading{
     font-size: 24px;
     line-height: 36px;
     font-size: 400;
-    width: 1000px;
+    width: 80%;
 }
 
 .additionalSectionContent{
     margin-top: 30px;
     display: flex;
     gap: 30px;
+    width: 100%;
 }
 
 .additionalSectionBox{
+    width: 33.3%;
     border-radius: 28px;
     border: 1px solid #4353FF;
     gap: 20px;
-    height: 430px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -253,8 +262,14 @@
 .additionalSectionInnerBox{
    width: 80%;
 }
+.additionalSectionImg{
+    position: relative;
+    width: 100%;
+    height: 60%;
 
-.additionalSectionBox img{
+}
+
+.additionalSectionImg img{
     border-top-right-radius: 28px;
     border-top-left-radius: 28px;
 }
@@ -307,16 +322,7 @@
     line-height: 36px;
     font-weight: 400;
   }
-  .mainHeading{
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 76.8px;
-    letter-spacing: -0.02em;
-    text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-  }
-  
+
   .questionContainer{
     display: flex;
     flex-direction: column;
@@ -430,12 +436,211 @@
     max-height: 400px;
     opacity: 1;
   }
-  @media (max-width: 1024px){
+  @media (max-width: 900px){
+    .featured {
+        position: static;
+      }
+
+      .grid{
+        /* z-index: 4;
+        color: white;
+        background: linear-gradient(150deg, rgba(56, 67, 184, 0.85) 0%, rgba(47, 52, 112, 0.85) 25%, rgba(47, 52, 112, 0.5) 35%, transparent 100%);
+        background-blend-mode: overlay;
+        padding-left: 150px;
+        padding-top: 100px;
+        height: 700px;
+        width: 100%; */
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+    .featuredTitle{
+        font-size: 50px;
+        line-height: 70.4px;
+        letter-spacing: -1.1px;
+        /* font-weight: 600;
+        width: 80%;
+        color: #FFFFFF; */
+    }
+    
+    .featuredText{
+        font-size: 20px;
+        line-height: 30.56px;
+        margin-top: 30px;
+        /* font-weight: 400;
+        width: 45%;
+        color: #FFFFFF; */
+    }
+    
+    .requestDemoBtn{
+        position: absolute;
+        bottom: 20%;
+    }
+
+    .vehicleScannerFeaturesContainer h2, .benefitsContainer h2{
+        font-size: 45px;
+        line-height: 65px;
+        letter-spacing: -2.46px;
+        width: 80%;
+    }
+    
+    .vehicleScannerFeaturesContent{
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        transition: transform 10s ease-in-out;
+    }
+    .vehicleScannerFeature{
+        width: 60%; /* full viewport width */
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        height: 380px;
+    }
+    .vehicleScannerFeaturesContent::-webkit-scrollbar {
+        display: none;
+      }
+    .scannerContent{
+        padding: 25px;
+    }
+    .scannerContent p{
+        line-height: 25px;
+    }
+    .benefitGrid{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .benefitItem{
+        width: 100%;
+    }
+
+    .benefitItem p{
+        font-size: 16px;
+        line-height: 24px;
+        width: 150%;
+    }
+
+    /* .servedFeaturesSection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    } */
+    
+    /* .servedFeaturesContainer{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    } */
+    
+    .servedFeatureHeading{
+        font-size: 45px;
+        line-height: 65px;
+        letter-spacing: -2.46px;
+        /* font-weight: 500; */
+    }
+    
+    .servedFeatureText{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        width: 90%
+    }
+    
+    .servedFeaturesContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .servedFeature{
+        width: 90%;
+        border-bottom: 9px solid #E6EBFA;
+    }
+
     .arrow{
         display: none;
     }
+
+    .additionalSectionHeading{
+        font-size: 50px;
+        line-height: 75px;
+        letter-spacing: -2.46px;
+        width: 80%;
+    }
+    
+    .additionalSectionSubHeading{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    
+
+    .additionalSectionContent{
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        transition: transform 10s ease-in-out;
+    }
+    .additionalSectionBox{
+        width: 60%; /* full viewport width */
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        height: 400px;
+    }
+    /* .additionalSectionInnerBox{
+        padding: 25px;
+    } */
+    .additionalSectionText{
+        margin-top: 20px;
+    }
+    .additionalSectionContent::-webkit-scrollbar {
+        display: none;
+      }
+      
+      .faqTitle{
+        font-size: 56px;
+        line-height: 75px;
+        letter-spacing: -2.46px;
+        /* font-weight: 500;
+        text-align: left; */
+      }
+      .faqSubTitle{
+        font-size: 20px;
+        line-height: 30px;
+        /* font-weight: 400; */
+      }
+
+      .questionContainer{
+        width: 100%;
+    }
+    .questionModal{
+        height: 100px;
+    }
+    .questionIndex{
+        font-size: 20px;
+    }
+    .openModal{
+        height: auto;
+      }
+    .faqGrid{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        /* padding: 0px 10px; */
+    }
+    .question p{
+        font-size: 16px;
+    }
+    .answer p{
+        font-size: 15px;
+    }
+
   }
-@media (max-width: 1024px) {
+
+
+@media (max-width: 600px) {
     .featured {
         position: static;
       }
@@ -461,25 +666,23 @@
         line-height: 45px;
         letter-spacing: 2px;
         font-weight: 600;
-        width: 70%;
-        max-width: 350px;
+        width: 80%;
         color: #FFFFFF;
     }
     
     .featuredText{
-        margin-top: 10px;
+        margin-top: 20px;
         font-size: 16px;
         line-height: 30px;
         font-weight: 400;
         width: 70%;
-        max-width: 350px;
         color: #FFFFFF;
     }
 
     .requestDemoBtn {
         width: 190px;
         position: absolute;
-        bottom: 120px;
+        bottom: 30%;
         left: 20px; /* anchor it within the grid */
         right: 20px; /* optional: prevent overflow */
         max-width: calc(100% - 40px); /* ensures no horizontal scroll */
@@ -497,54 +700,21 @@
         font-size: 30px;
         line-height: 35px;
         letter-spacing: 0.5px;
-        width: 320px;
+        width: 80%;
     }
-    .vehicleScannerFeaturesContent{
-        width: 100%;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        transition: transform 10s ease-in-out;
-    }
+
     .vehicleScannerFeature{
         width: 80%; /* full viewport width */
-        scroll-snap-align: start;
-        flex-shrink: 0;
-        height: 430px;
     }
-    .vehicleScannerFeaturesContent::-webkit-scrollbar {
-        display: none;
-      }
-    .scannerContent{
-        padding: 25px;
-    }
-    .scannerContent p{
-        line-height: 25px;
-    }
+
     .benefitsSection{
         width: 100dvw;
         max-width: 100%;
         margin-top: 40px;
     }
-    .benefitGrid{
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .benefitItem{
-        width: 95%;
-    }
 
-    .benefitItem p{
-        font-size: 16px;
-        line-height: 24px;
-        width: 150%;
-    }
-    .servedFeaturesSection{
-        width: 100dvw;
-        max-width: 100%;
-        margin-top: 20px;
+    .benefitItem{
+        width: 85%;
     }
     
     .servedFeatureText, .additionalSectionSubHeading, .faqSubTitle{
@@ -552,19 +722,7 @@
         line-height: 36px;
         width: 85%;
     }
-    .servedFeaturesContent{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    .servedFeature{
-        width: 90%;
-        border-bottom: 9px solid #E6EBFA;
-    }
-    .arrow{
-        display: none;
-    }
+    
 
     .additionalSection{
         width: 100dvw;
@@ -575,33 +733,15 @@
         width: 90%;
     }
     .additionalSectionHeading{
-        font-size: 24px;
+        font-size: 26px;
         line-height: 36px;
         letter-spacing: 1px;
-        width: 320px;
     }
-    .additionalSectionContent{
-        width: 100%;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        transition: transform 10s ease-in-out;
-    }
+
     .additionalSectionBox{
         width: 80%; /* full viewport width */
-        scroll-snap-align: start;
-        flex-shrink: 0;
-        height: 400px;
     }
-    /* .additionalSectionInnerBox{
-        padding: 25px;
-    } */
-    .additionalSectionText{
-        margin-top: 20px;
-    }
-    .additionalSectionContent::-webkit-scrollbar {
-        display: none;
-      }
+
 
       .faqSectionContainer{
         width: 100dvw;
@@ -615,30 +755,8 @@
         font-size: 26px;
         line-height: 40px;
         letter-spacing: 2px;
-        width: 320px;
+        width: 80%;
     }
-    .questionContainer{
-        width: 100%;
-    }
-    .questionModal{
-        height: 100px;
-    }
-    .questionIndex{
-        font-size: 20px;
-    }
-    .openModal{
-        height: auto;
-      }
-    .faqGrid{
-        grid-template-columns: 1fr;
-        column-gap: 0;
-        /* padding: 0px 10px; */
-    }
-    .question p{
-        font-size: 16px;
-    }
-    .answer p{
-        font-size: 15px;
-    }
+
   }
   

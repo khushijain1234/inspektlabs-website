@@ -57,9 +57,9 @@ const Navbar = ({ locale }) => {
         },
         {
           name: {
-            en: 'Fixed Camera',
+            en: 'Vehicle Damage Scanners',
           },
-          link: '/fixed-camera'
+          link: '/vehicle-damage-scanners'
         }
       ],
     },
