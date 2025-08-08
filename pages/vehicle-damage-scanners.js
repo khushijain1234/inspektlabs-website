@@ -158,6 +158,12 @@ const FixedCamera = ({ locale }) => {
     <div className={styles.container}>
         <main className={styles.main}>
             <section className={styles.featured}>
+                <img
+                    src="/img/fixed-camera-featured-photo.svg"
+                    alt="AI-powered vehicle scanner"
+                    className={styles.mainImg}
+                    fetchpriority="high"
+                />
                 <div className={styles.grid}>
                     <h1 className={styles.featuredTitle}>AI-Powered Vehicle Damage Scanners</h1>
                     <p className={styles.featuredText}>Inspektlabs vehicle scanners capture high-resolution image and video of cars to automatically detect Damages, enabling fast, accurate and cost effective inspections.</p>

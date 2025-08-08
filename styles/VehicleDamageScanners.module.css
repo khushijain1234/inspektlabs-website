@@ -11,15 +11,25 @@
   }
   
   .featured {
-    background: #222023;
+    /* background: #222023;
     background: url('/img/fixed-camera-featured-photo.svg');
-    background-size: cover;
+    background-size: cover; */
     color: var(--white);
     position: relative;
     height: 700px;
   }
+  .mainImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    /* opacity: 0.5; */
+    }
 .grid{
-    z-index: 4;
+    z-index: 1;
     color: white;
     background: linear-gradient(150deg, rgba(56, 67, 184, 0.85) 0%, rgba(47, 52, 112, 0.85) 25%, rgba(47, 52, 112, 0.5) 35%, transparent 100%);
     background-blend-mode: overlay;
@@ -438,218 +448,22 @@
     max-height: 400px;
     opacity: 1;
   }
-  @media (max-width: 900px){
+ 
+
+
+@media (max-width: 1024px) {
     .featured {
         position: static;
+        /* background: none; */
+        background: linear-gradient(150deg, rgba(56, 67, 184, 1) 0%, rgba(47, 52, 112, 1) 18%, rgb(33, 33, 33) 25%);
       }
-
-      .grid{
-        /* z-index: 4;
-        color: white;
-        background: linear-gradient(150deg, rgba(56, 67, 184, 0.85) 0%, rgba(47, 52, 112, 0.85) 25%, rgba(47, 52, 112, 0.5) 35%, transparent 100%);
-        background-blend-mode: overlay;
-        padding-left: 150px;
-        padding-top: 100px;
-        height: 700px;
-        width: 100%; */
-        padding-left: 40px;
-        padding-top: 40px;
-    }
-    .featuredTitle{
-        font-size: 50px;
-        line-height: 70.4px;
-        letter-spacing: -1.1px;
-        /* font-weight: 600;
-        width: 80%;
-        color: #FFFFFF; */
-    }
-    
-    .featuredText{
-        font-size: 20px;
-        line-height: 30.56px;
-        margin-top: 30px;
-        /* font-weight: 400;
-        width: 45%;
-        color: #FFFFFF; */
-    }
-    
-    .requestDemoBtn{
-        margin-top: 50px;
-    }
-
-    .vehicleScannerFeaturesContainer h2, .benefitsContainer h2{
-        font-size: 45px;
-        line-height: 65px;
-        letter-spacing: -2.46px;
-        width: 80%;
-    }
-    
-    .vehicleScannerFeaturesContent{
-        width: 100%;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        transition: transform 10s ease-in-out;
-    }
-    .vehicleScannerFeature{
-        width: 60%; /* full viewport width */
-        scroll-snap-align: start;
-        flex-shrink: 0;
-        height: 380px;
-    }
-    .vehicleScannerFeaturesContent::-webkit-scrollbar {
+      .mainImg{
         display: none;
-      }
-    .scannerContent{
-        padding: 25px;
-    }
-    .scannerContent p{
-        line-height: 25px;
-    }
-    .benefitGrid{
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .benefitItem{
-        width: 100%;
-    }
-
-    .benefitItem p{
-        font-size: 16px;
-        line-height: 24px;
-        width: 150%;
-    }
-
-    /* .servedFeaturesSection{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 50px;
-    } */
-    
-    /* .servedFeaturesContainer{
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    } */
-    
-    .servedFeatureHeading{
-        font-size: 45px;
-        line-height: 65px;
-        letter-spacing: -2.46px;
-        /* font-weight: 500; */
-    }
-    
-    .servedFeatureText{
-        font-size: 20px;
-        line-height: 30px;
-        font-weight: 400;
-        width: 90%
-    }
-    
-    .servedFeaturesContent{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-    }
-    .servedFeature{
-        width: 90%;
-        border-bottom: 9px solid #E6EBFA;
-    }
-
-    .arrow{
-        display: none;
-    }
-
-    .additionalSectionHeading{
-        font-size: 50px;
-        line-height: 75px;
-        letter-spacing: -2.46px;
-        width: 80%;
-    }
-    
-    .additionalSectionSubHeading{
-        font-size: 20px;
-        line-height: 30px;
-    }
-    
-
-    .additionalSectionContent{
-        width: 100%;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        transition: transform 10s ease-in-out;
-    }
-    .additionalSectionBox{
-        width: 60%; /* full viewport width */
-        scroll-snap-align: start;
-        flex-shrink: 0;
-        height: 400px;
-    }
-    /* .additionalSectionInnerBox{
-        padding: 25px;
-    } */
-    .additionalSectionText{
-        margin-top: 20px;
-    }
-    .additionalSectionContent::-webkit-scrollbar {
-        display: none;
-      }
-      
-      .faqTitle{
-        font-size: 56px;
-        line-height: 75px;
-        letter-spacing: -2.46px;
-        /* font-weight: 500;
-        text-align: left; */
-      }
-      .faqSubTitle{
-        font-size: 20px;
-        line-height: 30px;
-        /* font-weight: 400; */
-      }
-
-      .questionContainer{
-        width: 100%;
-    }
-    .questionModal{
-        height: 100px;
-    }
-    .questionIndex{
-        font-size: 20px;
-    }
-    .openModal{
-        height: auto;
-      }
-    .faqGrid{
-        grid-template-columns: 1fr;
-        column-gap: 0;
-        /* padding: 0px 10px; */
-    }
-    .question p{
-        font-size: 16px;
-    }
-    .answer p{
-        font-size: 15px;
-    }
-
-  }
-
-
-@media (max-width: 600px) {
-    .featured {
-        position: static;
-        background: none;
       }
     
       .grid{
         width: 100%;
-        z-index: 4;
+        z-index: 1;
         color: white;
         box-sizing: border-box;
         background: linear-gradient(150deg, rgba(56, 67, 184, 0.85) 0%, rgba(54, 60, 172, 0.85) 15%, transparent 100%);
@@ -692,6 +506,14 @@
         max-width: 100%;
         margin-top: 20px;
     }
+    .vehicleScannerFeaturesContent{
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        transition: transform 10s ease-in-out;
+    }
+
     .vehicleScannerFeaturesContainer, .benefitsContainer, .servedFeaturesContainer{
         width: 90%;
         gap: 20px;
@@ -705,24 +527,69 @@
 
     .vehicleScannerFeature{
         width: 80%; /* full viewport width */
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        height: 380px;
     }
 
+    .vehicleScannerFeaturesContent::-webkit-scrollbar {
+        display: none;
+      }
+
+    .scannerContent{
+        padding: 25px;
+    }
+    .scannerContent p{
+        line-height: 25px;
+    }
     .benefitsSection{
         width: 100dvw;
         max-width: 100%;
         margin-top: 40px;
     }
-
+    .benefitGrid{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        gap: 20px;
+    }
     .benefitItem{
         width: 85%;
     }
+    .benefitItem p{
+        font-size: 16px;
+        line-height: 24px;
+        width: 150%;
+    }
+    .servedFeatureHeading{
+        font-size: 45px;
+        line-height: 65px;
+        letter-spacing: -2.46px;
+        /* font-weight: 500; */
+    }
     
+    .servedFeatureText{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 400;
+        width: 90%
+    }
+    .servedFeaturesContent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
     .servedFeatureText, .additionalSectionSubHeading, .faqSubTitle{
         font-size: 18px;
         line-height: 36px;
         width: 85%;
     }
-    
+    .servedFeature{
+        width: 90%;
+        border-bottom: 9px solid #E6EBFA;
+    }
+
 
     .additionalSection{
         width: 100dvw;
@@ -736,13 +603,34 @@
         font-size: 26px;
         line-height: 36px;
         letter-spacing: 1px;
+        width: 80%;
+    }
+    .additionalSectionSubHeading{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .additionalSectionContent{
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        transition: transform 10s ease-in-out;
     }
 
     .additionalSectionBox{
         width: 80%; /* full viewport width */
+        scroll-snap-align: start;
+        flex-shrink: 0;
+        height: 400px;
     }
 
-
+    .additionalSectionText{
+        margin-top: 20px;
+    }
+    .additionalSectionContent::-webkit-scrollbar {
+        display: none;
+      }
       .faqSectionContainer{
         width: 100dvw;
         max-width: 100%;
@@ -756,6 +644,35 @@
         line-height: 40px;
         letter-spacing: 2px;
         width: 80%;
+    }
+    .faqSubTitle{
+        font-size: 20px;
+        line-height: 30px;
+        /* font-weight: 400; */
+      }
+
+      .questionContainer{
+        width: 100%;
+    }
+    .questionModal{
+        height: 100px;
+    }
+    .questionIndex{
+        font-size: 20px;
+    }
+    .openModal{
+        height: auto;
+      }
+    .faqGrid{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        /* padding: 0px 10px; */
+    }
+    .question p{
+        font-size: 16px;
+    }
+    .answer p{
+        font-size: 15px;
     }
 
   }

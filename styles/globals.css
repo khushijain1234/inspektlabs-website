@@ -129,7 +129,7 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: var(--black-bg-light);
+  background-color: rgb(8, 10, 30);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 10;
