@@ -24,7 +24,7 @@ const FixedCamera = ({ locale }) => {
             id: '3',
             title: 'Inspekt WallScan',
             text: 'Wall mounted setup for facilities with existing inspection area',
-            img: 'InspektPillars.jpg'
+            img: 'InspektWallScan.jpeg'
         }
     ]
 
