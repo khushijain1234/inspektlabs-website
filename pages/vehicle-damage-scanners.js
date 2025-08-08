@@ -158,11 +158,14 @@ const FixedCamera = ({ locale }) => {
     <div className={styles.container}>
         <main className={styles.main}>
             <section className={styles.featured}>
-                <img
+                <Image
                     src="/img/fixed-camera-featured-photo.svg"
                     alt="AI-powered vehicle scanner"
+                    layout='fill'
+                    priority
+                    fetchPriority="high"
+                    sizes="100vw"
                     className={styles.mainImg}
-                    fetchpriority="high"
                 />
                 <div className={styles.grid}>
                     <h1 className={styles.featuredTitle}>AI-Powered Vehicle Damage Scanners</h1>
