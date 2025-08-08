@@ -214,33 +214,25 @@ const FixedCamera = ({ locale }) => {
                             <p className={styles.servedFeatureTitle}>Fleet Management</p>
                             <p className={styles.servedFeatureSubTitle}>Daily vehicle condition reports</p>
                         </div>
-                        <div className={styles.arrow}>
-                            <Image src='/img/Vector 2740.svg'   width={100} height={20} alt='arrow' />
-                        </div>
+                        
                         <div className={styles.servedFeature}>
                             <Image src='/img/Car rental companies.svg' width={250} height={200} alt='Car rental companies' />
                             <p className={styles.servedFeatureTitle}>Car rental companies</p>
                             <p className={styles.servedFeatureSubTitle}>Record vehicle condition before and after rentals to avoid disputes and spot damages</p>
                         </div>
-                        <div className={styles.arrow}>
-                            <Image src='/img/Vector 2740.svg'   width={100} height={20} alt='arrow' />
-                        </div>
+                        
                         <div className={styles.servedFeature}>
                             <Image src='/img/Logistics pre-Delivery Inspections.svg' width={250} height={200} alt='Logistics pre-delivery' />
                             <p className={styles.servedFeatureTitle}>Logistics Pre-Delivery Inspections</p>
                             <p className={styles.servedFeatureSubTitle}>Verify vehicle condition before delivery with quick, automated checks</p>
                         </div>
-                        <div className={styles.arrow}>
-                            <Image src='/img/Vector 2740.svg'   width={100} height={20} alt='arrow' />
-                        </div>
+                        
                         <div className={styles.servedFeature}>
                             <Image src='/img/Auction solutions.svg' width={250} height={200} alt='Auction solutions' />
                             <p className={styles.servedFeatureTitle}>Auto re-marketing/ Auction solutions</p>
                             <p className={styles.servedFeatureSubTitle}>Create reliable inspection reports to boost buyer trust and speed up sales</p>
                         </div>
-                        <div className={styles.arrow}>
-                            <Image src='/img/Vector 2740.svg'   width={100} height={20} alt='arrow' />
-                        </div>
+                        
                         <div className={styles.servedFeature}>
                             <Image src='/img/Automotive Repair Network.svg' width={250} height={200} alt='Automotive Repair Network' />
                             <p className={styles.servedFeatureTitle}>Automotive Repair Networks</p>

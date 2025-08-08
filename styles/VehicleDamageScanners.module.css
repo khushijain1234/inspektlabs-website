@@ -44,6 +44,7 @@
     font-weight: 400;
     width: 45%;
     color: #FFFFFF;
+    margin-top: 30px;
 }
 
 .requestDemoBtn{
@@ -183,7 +184,8 @@
 .servedFeaturesContent{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-around;
+    gap: 50px;
 }
 .servedFeature{
     width: 280px;
@@ -472,8 +474,7 @@
     }
     
     .requestDemoBtn{
-        position: absolute;
-        bottom: 20%;
+        margin-top: 50px;
     }
 
     .vehicleScannerFeaturesContainer h2, .benefitsContainer h2{
@@ -643,6 +644,7 @@
 @media (max-width: 600px) {
     .featured {
         position: static;
+        background: none;
       }
     
       .grid{
@@ -680,7 +682,7 @@
 
     .requestDemoBtn {
         width: 190px;
-        margin-bottom: 50px;
+        margin-top: 50px;
         left: 20px; /* anchor it within the grid */
         right: 20px; /* optional: prevent overflow */
         max-width: calc(100% - 40px); /* ensures no horizontal scroll */

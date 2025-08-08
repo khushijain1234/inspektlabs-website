@@ -22,7 +22,7 @@ const Footer = ({locale}) => {
                         <a href="https://www.instagram.com/inspektlabs" target="_blank" rel="noreferrer noopener"><i className="fab fa-instagram fa-2x" title="Instagram"></i></a>
                     </div> */}
 
-                    <p>{language["Our products conduct damage"][locale]} </p>
+                    <h1 className='footerSubHeading'>{language["Our products conduct damage"][locale]} </h1>
                     <div
                     className="getInTouchBtn"
                     onClick={() => (window.location.href = '/contact-us')}

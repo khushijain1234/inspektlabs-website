@@ -313,13 +313,17 @@ a {
   font-size: 16px;
   line-height: 1.88;
 }
+.footerSubHeading{
+  font-size: 25px;
+  font-weight: 500;
+}
 
 .logo-footer span {
   display: block;
 }
 .location-heading{
   font-size: 23px;
-  line-height: 13.75px;
+  line-height: 32px;
   letter-spacing: 1.2px;
   font-variant-caps: all-petite-caps;
   font-weight: 700;
