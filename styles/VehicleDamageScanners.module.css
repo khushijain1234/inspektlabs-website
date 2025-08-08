@@ -655,7 +655,6 @@
         padding-top: 30px;
         padding-left: 20px;
         padding-right: 20px;
-        height: 650px;
         display: flex;
         flex-direction: column;
         text-align: left;
@@ -681,8 +680,7 @@
 
     .requestDemoBtn {
         width: 190px;
-        position: absolute;
-        bottom: 30%;
+        margin-bottom: 50px;
         left: 20px; /* anchor it within the grid */
         right: 20px; /* optional: prevent overflow */
         max-width: calc(100% - 40px); /* ensures no horizontal scroll */
